@@ -66,9 +66,9 @@ class Configer
             "license" => "",
             "publish_frequency" => 120,
             "custom_message" => "",
-            "advance_block_mode" => "on",
-            "log_guest_ip" => "on",
-            "encrypt_guest_ip" => "on",
+            "advance_block_mode" => "off",
+            "log_guest_ip" => "off",
+            "encrypt_guest_ip" => "off",
         ];
 
         $result = \DB::table('setting')->get();
