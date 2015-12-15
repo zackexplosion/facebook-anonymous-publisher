@@ -7,6 +7,10 @@
 @endsection
 @section('foot')
 
-  <script src="/js/block-guest.js"></script>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <script src="/js/block-guest.js"></script>
+    </div>
+  </div>
 
 @endsection
