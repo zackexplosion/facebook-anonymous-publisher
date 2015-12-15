@@ -139,7 +139,7 @@ QueueRows = React.createClass(
         </tbody>
         <tfoot>
           <tr>
-            <td className="text-center" colSpan="6">
+            <td colSpan="6">
               <Pagination data={this.props.data} onPageChange={this.handlePageChange} />
             </td>
           </tr>

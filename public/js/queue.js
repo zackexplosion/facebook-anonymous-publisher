@@ -207,7 +207,7 @@ QueueRows = React.createClass({displayName: "QueueRows",
         ), 
         React.createElement("tfoot", null, 
           React.createElement("tr", null, 
-            React.createElement("td", {className: "text-center", colSpan: "6"}, 
+            React.createElement("td", {colSpan: "6"}, 
               React.createElement(Pagination, {data: this.props.data, onPageChange: this.handlePageChange})
             )
           )
