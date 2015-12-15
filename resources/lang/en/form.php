@@ -6,7 +6,7 @@ return [
     'placeholder'           => 'What\'s on your mind?',
     'text_limit'            => 'Text length limit',
     'text_post_mode'        => 'Publish as plaintext',
-    'img_text_post_mode'    => 'Publish as image-text',
+    'img_text_post_mode'    => 'Publish as text-image',
     'show_preview_image'    => 'Show preview image',
     'publish_license'       => 'Publish license',
     'accept_license'        => 'I have read and accept the license',
