@@ -64,7 +64,7 @@ https://graph.facebook.com/oauth/access_token?
 #### Step 4: Register an OpenShift account and deploy Publisher Application on it
 + Go to [Openshift create an account](https://www.openshift.com/app/account/new). Fill in your email and other required information ☛ Click `Sign Up` ☛ Then you will receive a verify mail (go checking your inbox), click `Verify Your Account` ☛ Click `I Accept` ☛ Click `Create your first application now` ☛ In the application type list, find `Laravel 5.0` and select it.
 
-+ Fill in your `Public URL` where has two fields. The first one is a string for recognizing your application, the second is your namespace. For example, I choose **kangxi**-**kaobei**.rhcloud.com in this demo ☛ Next, copy an paste the following URL to the `Source Code` field:
++ Fill in your `Public URL` where has two fields. The first one is a string for recognizing your application, the second is your namespace. For example, I choose **demo**-**anonykangxi**.rhcloud.com in this demo ☛ Next, copy an paste the following URL to the `Source Code` field:
 ```
 https://github.com/kxgen/facebook-anonymous-publisher
 ```
@@ -110,7 +110,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYcnn3tA4B0GUM4SxNA2zilkTuMGPpzHg4YEUitabU
 
 + Now you can clone the repository to your computer, copy the `git clone` command and open your `Terminal` ☛ Paste the command and press enter
 
-+ Click `Continue to the application overview page.` link ☛ Copy the `application URI` (for example, the URI in this demo is: *kangxi-kaobei.rhcloud.com*).
++ Click `Continue to the application overview page.` link ☛ Copy the `application URI` (for example, the URI in this demo is: *demo-anonykangxi.rhcloud.com*).
 
 #### Step 5: Register Google reCAPTCHA
 + Go to [Google reCAPTCHA](https://www.google.com/recaptcha/admin) ☛ Fill the `Label` with your application name ☛ Paste the application URI in Step 4 to the `Domains` input field ☛ In `Owners` field, enter your email ☛ Click `Register` ☛ note down the `Site key` and `Secret key`
