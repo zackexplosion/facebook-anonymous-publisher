@@ -25,12 +25,12 @@ This application is based on Laravel 5.0 (a PHP framework) and free/open on Gith
 
 If you don't have your own server, the following instructions will teach you how to build your own Facebook Publisher on [OpenShift](https://www.openshift.com) (by using the *Free Plan*).
 
-### Step 1: Create a Facebook page
+#### Step 1: Create a Facebook page
 + [Click here to create a new Facebook page](https://www.facebook.com/pages/create/), select appropriate page type, fill in description and other relevant fields.
 
 + In your new Facebook page, switch to `About` tab and scroll down to the bottom of the page then note down the `Facebook Page ID`. You will use the role and previlege of this Facebook page to post messages on this page's wall.
 
-### Step 2: Create a Facebook App
+#### Step 2: Create a Facebook App
 + If you were not a Facebook developer, [click here to register as a developer](http://developers.facebook.com) (You have to verify through mobile.)
 
 + Go to [Facebook Apps dashboard](https://developers.facebook.com/apps) ☛ Click `Add a New App` ☛ Choose platform of `Website` ☛ Choose a name for your application ☛ Click `Create New Facebook App ID` ☛ Choose Category ☛ Click `Create App ID`
@@ -41,7 +41,7 @@ If you don't have your own server, the following instructions will teach you how
 
 + Go back to `Dashboard`, note down `App ID` and `App Secret` (You have to click `Show` next to the field; it will ask you to enter your Facebook password.)
 
-### Step 3: Obtain your page access token
+#### Step 3: Obtain your page access token
 + Go to [Graph API Explorer](https://developers.facebook.com/tools/explorer/) ☛ In the Application drop-down menu, select the name of your app which created in Step 2 ☛ Click `Get Token` to open drop-down menu and select `Get Access Token` ☛ In Permissions popup menu, go to `Extended Permissions` tab ☛ Checked  `manage_pages`, `publish_actions` and `publish_pages` ☛ Click `Get Access Token`
 
 + Note down the `short-lived token` which shows in the input field next to the Access Token label.
@@ -61,7 +61,7 @@ https://graph.facebook.com/oauth/access_token?
 
 + According to [Facebook's documentation](https://developers.facebook.com/docs/facebook-login/access-tokens#extendingpagetokens), a page access token obtained from long-lived user token will never expire in the future.
 
-### Step 4: Register an OpenShift account and deploy Publisher Application on it
+#### Step 4: Register an OpenShift account and deploy Publisher Application on it
 + Go to [Openshift create an account](https://www.openshift.com/app/account/new). Fill in your email and other required information ☛ Click `Sign Up` ☛ Then you will receive a verify mail (go checking your inbox), click `Verify Your Account` ☛ Click `I Accept` ☛ Click `Create your first application now` ☛ In the application type list, find `Laravel 5.0` and select it.
 
 + Fill in your `Public URL` where has two fields. The first one is a string for recognizing your application, the second is your namespace. For example, I choose **kangxi**-**kaobei**.rhcloud.com in this demo ☛ Next, copy an paste the following URL to the `Source Code` field:
@@ -112,10 +112,10 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYcnn3tA4B0GUM4SxNA2zilkTuMGPpzHg4YEUitabU
 
 + Click `Continue to the application overview page.` link ☛ Copy the `application URI` (for example, the URI in this demo is: *kangxi-kaobei.rhcloud.com*).
 
-### Step 5: Register Google reCAPTCHA
+#### Step 5: Register Google reCAPTCHA
 + Go to [Google reCAPTCHA](https://www.google.com/recaptcha/admin) ☛ Fill the `Label` with your application name ☛ Paste the application URI in Step 4 to the `Domains` input field ☛ In `Owners` field, enter your email ☛ Click `Register` ☛ note down the `Site key` and `Secret key`
 
-### Step 6: Configure your Publisher settings
+#### Step 6: Configure your Publisher settings
 + Go to the repository folder which you have cloned in Step 4 ☛ Open `./config/publisher.php` with your preferred editor and configure the application settings.
 
 + Then, open the `Terminal` and enter following commands:
@@ -130,7 +130,7 @@ $ git push
 + Go to your application homepage and try to submit a testing message.
 
 
-### Step 7: Keep your Publisher working
+#### Step 7: Keep your Publisher working
 
 + Go to [Uptime Robot](http://uptimerobot.com) ☛ Click `Sign-up (free)` ☛ In the popup, fill in your Name, E-mail and Password ☛ Click `Sign-up` button ☛ Check your E-mail inbox, open the account activation email, click the activate link.
 
