@@ -25,7 +25,7 @@ class AjaxController extends AdminController
         $result = $query->orderby('id', 'desc')->paginate(100)->toArray();
 
         for ($i = 0; $i < count($result['data']); $i++) {
-            $result['data'][$i]->post_message = $this->link($result['data'][$i]->post_message);
+            $result['data'][$i]->post_message = $this->link(htmlentities($result['data'][$i]->post_message));
         }
 
         $data = [
