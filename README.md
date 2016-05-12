@@ -44,7 +44,7 @@ If you don't have your own server, the following instructions will teach you how
 + Go back to `Dashboard`, note down `App ID` and `App Secret` (You have to click `Show` next to the field; it will ask you to enter your Facebook password.)
 
 #### Step 3: Obtain your page access token
-+ Go to [Graph API Explorer](https://developers.facebook.com/tools/explorer/) ☛ In the Application drop-down menu, select the name of your app which created in Step 2 ☛ Click `Get Token` to open drop-down menu and select `Get Access Token` ☛ In Permissions popup menu, go to `Extended Permissions` tab ☛ Checked  `manage_pages`, `publish_actions` and `publish_pages` ☛ Click `Get Access Token`
++ Go to [Graph API Explorer](https://developers.facebook.com/tools/explorer/) ☛ In the Application drop-down menu, select the name of your app which created in Step 2 ☛ Click `Get Token` to open drop-down menu and select `Get User Access Token` ☛ In Permissions popup menu, checked `manage_pages`, `publish_actions` and `publish_pages` ☛ Click `Get Access Token`
 
 + Note down the `short-lived token` which shows in the input field next to the Access Token label.
 
