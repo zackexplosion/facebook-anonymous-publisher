@@ -29,7 +29,7 @@ return [
     |   https://developers.facebook.com/
     |
     | To obtain a Page access token, follow the readme guide:
-    |   https://github.com/kxgen/kangxi-anonymous-publisher/blob/master/readme.md
+    |   https://github.com/kxgio/facebook-anonymous-publisher
     |
      */
     'fb_app_setting'     => [
