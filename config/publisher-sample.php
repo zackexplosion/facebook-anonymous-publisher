@@ -10,8 +10,8 @@ return [
     | For login to http://yourdomain/admin, be sure to change the password.
     |
      */
-    'user'               => 'admin',
-    'password'           => 'secret',
+    'user'               => '',
+    'password'           => '',
 
     /*
     |--------------------------------------------------------------------------
